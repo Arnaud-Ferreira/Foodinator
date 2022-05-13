@@ -49,7 +49,7 @@ function Most() {
                             arrows: false,
                             pagination: false,
                             drag: 'free',
-                            gap: "2.5rem",
+                            gap: "3rem",
                         }}>
                         {most.map((recipe) => {
                             return(
