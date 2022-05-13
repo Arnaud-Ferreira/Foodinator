@@ -26,7 +26,7 @@ function Most() {
             setMost(JSON.parse(check));
         }else{
             const api = await fetch( 
-                `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12`
+                `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
                 );
             // going to give me a json format to be able to play around with the data
             const data = await api.json();
@@ -49,11 +49,11 @@ function Most() {
                             arrows: false,
                             pagination: false,
                             drag: 'free',
-                            gap: "4rem",
+                            gap: "2.5rem",
                         }}>
                         {most.map((recipe) => {
                             return(
-                                <SplideSlide>
+                                <SplideSlide key={recipe.id}>
                                 <Card>
                                     <p>{recipe.title}</p>
                                     <img src={recipe.image} alt={recipe.title} />
