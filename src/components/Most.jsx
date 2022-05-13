@@ -20,6 +20,7 @@ function Most() {
 
     return (
         <div>
+            {/* we have saved all the datas in most thank's to useState so now mapping into the variable */}
             {most.map((recipe) => {
                 return(
                     <div key={recipe.id}>
