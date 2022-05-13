@@ -41,7 +41,7 @@ function Carnivorous() {
                     arrows: false,
                     pagination: false,
                     drag: 'free',
-                    gap: "3rem",
+                    gap: "2.5rem",
                 }}>
                 {carnivorous.map((recipe) => {
                     return(
