@@ -3,15 +3,19 @@ import { useState } from 'react';
 import {FaSearch} from 'react-icons/fa';
 
 function Search() {
+
   return (
     <FormStyle>
         <div>
-          <input type="text" />
           <FaSearch />
+          <input
+           type="text" 
+          />
         </div>
     </FormStyle>
   );
 }
+
 
 const FormStyle = styled.div`
     margin: 0rem 20 rem;
