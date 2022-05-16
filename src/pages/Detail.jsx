@@ -34,8 +34,21 @@ function Detail() {
         </div>
         <Info>
             {/* When we click on the instructions button i can run a function that say to set the active button to instructions */}
-            <Button className={activeButton === 'instructions' ? 'active' : ''} onClick={() => setActiveButton('instructions')}>Instructions</Button>
-            <Button className={activeButton ==='ingredients' ? 'active' : ''} onClick={() => setActiveButton("ingredients")}>Ingrédients</Button>
+            <Button
+             className={activeButton === 'instructions' ? 'active' : ''}
+             onClick={() => setActiveButton('instructions')}
+             >
+              Instructions
+            </Button>
+            <Button
+             className={activeButton ==='ingredients' ? 'active' : ''}
+             onClick={() => setActiveButton("ingredients")}
+             >
+              Ingrédients
+            </Button>
+            <div>
+                <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
+            </div>
         </Info>
         </DetailWrapper>
     );
