@@ -1,21 +1,31 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import {FaSearch} from 'react-icons/fa';
+import {useNavigate} from 'react-router-dom';
 
 function Search() {
 
   const [input, setInput] = useState("");
 
+  // To navigate between pages with the input
+  const navigate = useNavigate();
+
+  // On enter i want to load up another page
+  const submitHandler = (e) => {
+    // I don't want the page to refresh on enter
+    e.preventDefault();
+    navigate("/searched/" + input);
+  };
+
   return (
-    <FormStyle>
+    <FormStyle onSubmit={submitHandler}>
         <div>
           <FaSearch />
           <input
-           onChange= {(event) => setInput(event.target.value)}
+           onChange={(e) => setInput(e.target.value)}
            type="text"
            value={input} 
           />
-          <h1>{input}</h1>
         </div>
     </FormStyle>
   );
@@ -23,7 +33,7 @@ function Search() {
 
 
 const FormStyle = styled.div`
-    margin: 0rem 20 rem;
+    margin: 2rem;
     position: relative;
     display: flex;
     justify-content: center;
