@@ -6,7 +6,7 @@
     justify-content: center;
 
     div {
-        width: 60%;
+        width: 100%;
         position: relative;
     }
     input {
@@ -18,13 +18,13 @@
         border: none;
         border-radius: 1rem;
         outline: none;
-        width: 60%;
+        width: 70%;
     }
 
     svg {
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 15%;
         transform: translate(100%, -50%);
         color: white;
         cursor: pointer;
