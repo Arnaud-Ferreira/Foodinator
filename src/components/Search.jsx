@@ -20,7 +20,7 @@ function Search() {
   return (
     <FormStyle onSubmit={submitHandler}>
         <div>
-          <FaSearch />
+          <FaSearch onClick={submitHandler} />
           <input
            onChange={(e) => setInput(e.target.value)}
            type="text"
@@ -30,7 +30,6 @@ function Search() {
     </FormStyle>
   );
 }
-
 
 const FormStyle = styled.div`
     margin: 2rem;
@@ -59,6 +58,7 @@ const FormStyle = styled.div`
         left: 0%;
         transform: translate(100%, -50%);
         color: white;
+        cursor: pointer;
     }
 `;
 
