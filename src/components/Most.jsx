@@ -50,7 +50,7 @@ function Most() {
                             arrows: false,
                             pagination: false,
                             drag: 'free',
-                            gap: "2.5rem",
+                            gap: "1rem",
                         }}>
                         {most.map((recipe) => {
                             return(
@@ -80,6 +80,7 @@ const Card = styled.div`
  border-radius: 2rem;
  overflow: hidden;
  position: relative;
+ transform: scale(0.9);
 
  img{
     border-radius: 2rem;
@@ -104,6 +105,10 @@ const Card = styled.div`
      justify-content: center;
      align-items: center;
  }
+ &:hover{
+     transform: scale(1);
+     transition: all 0.3s ease-in-out;
+ }
  `;
 
  const Gradient = styled.div`
@@ -111,7 +116,7 @@ const Card = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,0), #52515166);
+  background: linear-gradient(rgba(0,0,0,0), #6e191952);
   `;
 
 export default Most;

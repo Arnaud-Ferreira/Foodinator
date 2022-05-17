@@ -1,0 +1,76 @@
+h2{
+    text-align: center;
+}
+
+.image {
+    border-radius: 1rem;
+}
+
+button {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+ol{
+    margin-top: 2rem;
+}
+
+ul{
+    width: 110%;
+    margin-left: -4rem;
+    padding: 1rem 2rem;
+    list-style-type: none;
+    position: relative;
+	background: #fff;
+    background-clip: padding-box;
+    border: solid 8px transparent;
+    border-radius: 0.5rem;
+    &:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -8px; /* same as border width */
+		border-radius: inherit; /* inherit container box's radius */
+		background: linear-gradient(to left, #c55424, #800a0a);
+	}
+}
+
+.iXzlLe li {
+    font-size: 1rem;
+}
+
+.wrapper{
+    width: 110%;
+    margin-left: -4rem;
+    padding: 1rem 2rem;
+    position: relative;
+	background: #fff;
+    background-clip: padding-box;
+    border: solid 8px transparent;
+    border-radius: 0.5rem;
+    &:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -8px; /* same as border width */
+		border-radius: inherit; /* inherit container box's radius */
+		background: linear-gradient(to left, #c55424, #800a0a);
+	}
+}
+
+.left {
+    margin-top: 1rem;
+}

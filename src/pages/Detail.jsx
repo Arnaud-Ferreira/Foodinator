@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from 'styled-components';
+import './Detail.scss';
 
 import React from 'react';
 
@@ -28,9 +29,9 @@ function Detail() {
 
     return (
         <DetailWrapper>
-        <div>
+        <div className="left">
             <h2>{details.title}</h2>
-            <img src={details.image} alt="" />
+            <img className="image" src={details.image} alt="recipe" />
         </div>
         <Info>
             {/* When we click on the instructions button i can run a function that say to set the active button to instructions */}
@@ -49,15 +50,15 @@ function Detail() {
 
             {/* If it's true then render out anything here */}
             {activeButton === 'instructions' && (
-                <div>
-                <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
-                <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
+                <div className="wrapper">
+                <p dangerouslySetInnerHTML={{__html: details.summary}}></p>
+                <p dangerouslySetInnerHTML={{__html: details.instructions}}></p>
             </div>
             )}
             {activeButton === 'ingredients' && (
                 <ul>
                 {details.extendedIngredients.map((ingredient) => ( 
-                    <li key={ingredient.id}>{ingredient.original}</li>
+                    <li className='element' key={ingredient.id}>{ingredient.original}</li>
                 ))}
             </ul>
             )}
@@ -72,7 +73,7 @@ const DetailWrapper = styled.div`
    margin-bottom: 5rem;
    display: flex;
    .active{
-       background: linear-gradient(35deg, #494949, #313131);
+       background: linear-gradient(35deg, #c55424, #800a0a);
        color: white;
    }
    h2{
@@ -88,12 +89,18 @@ const DetailWrapper = styled.div`
 `;
 
 const Button = styled.button`
+    cursor: pointer;    
     padding: 1rem 2rem;
     color: #313131;
     background: white;
     border: 2px solid black;
     margin-right: 2rem;
     font-weight: 600;
+    transform: scale(0.9);
+    &:hover{
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+    }
 `;
 
 const Info = styled.div`

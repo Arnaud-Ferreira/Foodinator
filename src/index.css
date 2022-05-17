@@ -20,6 +20,10 @@ code {
     monospace;
 }
 
+h2 {
+  color: rgba(27, 24, 24, 0.753);
+}
+
 h4 {
   font-size: 1rem;
   color: rgb(55,55,55);
@@ -27,7 +31,7 @@ h4 {
 
 h3 {
   font-size: 1.5rem;
-  color: rgb(55,55,55);
+  color: rgba(27, 24, 24, 0.733);
   line-height: 2.5rem;
   margin: 2rem 0rem;
 }
@@ -35,3 +39,4 @@ h3 {
 a {
   color: rgb(55,55,55);
 }
+

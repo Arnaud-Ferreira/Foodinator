@@ -43,6 +43,7 @@ const Grid = styled.div`
 `;
 
 const Card = styled.div`
+  transform: scale(0.9);
     img {
         width: 100%;
         border-radius: 2rem;
@@ -55,6 +56,10 @@ const Card = styled.div`
     h4 {
         text-align: center;
     }
+    &:hover{
+     transform: scale(1);
+     transition: all 0.3s ease-in-out;
+ }
 `;
 
 export default Searched
