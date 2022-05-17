@@ -56,7 +56,7 @@ function Detail() {
             </div>
             )}
             {activeButton === 'ingredients' && (
-                <ul>
+                <ul className="article">
                 {details.extendedIngredients.map((ingredient) => ( 
                     <li className='element' key={ingredient.id}>{ingredient.original}</li>
                 ))}
@@ -83,9 +83,7 @@ const DetailWrapper = styled.div`
        font-size: 1.2rem;
        line-height: 2.5rem;
    }
-   ul{
-       margin-top: 2rem;
-   }
+
 `;
 
 const Button = styled.button`
