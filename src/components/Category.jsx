@@ -40,7 +40,7 @@ const StyleLink = styled(NavLink)`
     border-radius: 50%;
     margin-right: 2.2rem;
     text-decoration: none;
-    background: linear-gradient(35deg, #494949, #313131);
+    background: linear-gradient(35deg, #c55424, #800a0a);
     width: 6rem;
     height: 6rem;
     cursor: pointer;

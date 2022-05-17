@@ -1,10 +1,26 @@
 .logo {
   position: absolute;
-  left: 15px;
-  top: 0px;
-  width: 15%;
+  left: 40px;
+  top: -35px;
+  width: 14%;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Poppins', cursive;
+}
+
+@media (max-width: 1024px) {
+  .logo{
+      width: 18%;
+      top: -19px;
+      left: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+    .logo{
+       width: 18%;
+       top: -5px;
+       left: 7px; 
+    }
 }
