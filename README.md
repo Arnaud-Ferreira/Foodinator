@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+<img src="./src/brand.png" alt="Foodinator" width="180" height="170">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Foodinator, for food lovers
+<br>
 
-## Available Scripts
 
-In the project directory, you can run:
+[Foodinator](https://foodinator.netlify.app/) is a recipe application that is powered by the spoonacular API. <br>
+Recipes from all over the world, you can search for recipes using several filters, or via the search bar. You will find for each, an illustration, ingredients and instructions.
+A carousel of the most popular recipes is updated automatically.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 &nbsp;Project features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Search filters by some tags
+  - Search bar
+  - Recipe carousel updated via API
+  - Some animations fade in-out recipes (framer-motion)
+  
+ <br>
 
-### `npm test`
+ ## 🔧 &nbsp;Frameworks and tools
+ <div align="center">
+<br>
+        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+        <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
+        <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+        
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This was my first experience with styled components and I loved it,
+go visit : [Foodinator](https://foodinator.netlify.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br><br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Preview
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](Result%20.gif)
