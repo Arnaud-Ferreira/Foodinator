@@ -24,3 +24,12 @@
        left: 7px; 
     }
 }
+
+/* Mobile L */
+@media (max-width: 425px) {
+  .logo{
+     width: 18%;
+     top: -5px;
+     left: 7px; 
+  }
+}
