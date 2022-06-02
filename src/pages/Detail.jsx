@@ -68,6 +68,7 @@ function Detail() {
     );
 }
 
+// Styled components
 const DetailWrapper = styled.div`
    margin-top: 10rem;
    margin-bottom: 5rem;

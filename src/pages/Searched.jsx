@@ -42,6 +42,7 @@ const Grid = styled.div`
     grid-gap: 3rem;
 `;
 
+// Styled components
 const Card = styled.div`
   transform: scale(0.9);
     img {
